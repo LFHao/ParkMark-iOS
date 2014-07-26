@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E7BA61C198424B300B1DC48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61B198424B300B1DC48 /* Foundation.framework */; };
+		5E7BA61E198424B300B1DC48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61D198424B300B1DC48 /* CoreGraphics.framework */; };
+		5E7BA620198424B300B1DC48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61F198424B300B1DC48 /* UIKit.framework */; };
+		5E7BA626198424B300B1DC48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA624198424B300B1DC48 /* InfoPlist.strings */; };
+		5E7BA628198424B300B1DC48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA627198424B300B1DC48 /* main.m */; };
+		5E7BA62C198424B300B1DC48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA62B198424B300B1DC48 /* AppDelegate.m */; };
+		5E7BA62F198424B300B1DC48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA62D198424B300B1DC48 /* Main.storyboard */; };
+		5E7BA632198424B300B1DC48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA631198424B300B1DC48 /* ViewController.m */; };
+		5E7BA634198424B300B1DC48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA633198424B300B1DC48 /* Images.xcassets */; };
+		5E7BA63B198424B300B1DC48 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA63A198424B300B1DC48 /* XCTest.framework */; };
+		5E7BA63C198424B300B1DC48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61B198424B300B1DC48 /* Foundation.framework */; };
+		5E7BA63D198424B300B1DC48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61F198424B300B1DC48 /* UIKit.framework */; };
+		5E7BA645198424B300B1DC48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA643198424B300B1DC48 /* InfoPlist.strings */; };
+		5E7BA647198424B300B1DC48 /* ParkMark_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA646198424B300B1DC48 /* ParkMark_iOSTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E7BA63E198424B300B1DC48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E7BA610198424B300B1DC48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E7BA617198424B300B1DC48;
+			remoteInfo = "ParkMark-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E7BA618198424B300B1DC48 /* ParkMark-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParkMark-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7BA61B198424B300B1DC48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E7BA61D198424B300B1DC48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5E7BA61F198424B300B1DC48 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5E7BA623198424B300B1DC48 /* ParkMark-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParkMark-iOS-Info.plist"; sourceTree = "<group>"; };
+		5E7BA625198424B300B1DC48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E7BA627198424B300B1DC48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E7BA629198424B300B1DC48 /* ParkMark-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParkMark-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		5E7BA62A198424B300B1DC48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E7BA62B198424B300B1DC48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E7BA62E198424B300B1DC48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E7BA630198424B300B1DC48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E7BA631198424B300B1DC48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E7BA633198424B300B1DC48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5E7BA639198424B300B1DC48 /* ParkMark-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParkMark-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E7BA63A198424B300B1DC48 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5E7BA642198424B300B1DC48 /* ParkMark-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParkMark-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		5E7BA644198424B300B1DC48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E7BA646198424B300B1DC48 /* ParkMark_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkMark_iOSTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E7BA615198424B300B1DC48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7BA61E198424B300B1DC48 /* CoreGraphics.framework in Frameworks */,
+				5E7BA620198424B300B1DC48 /* UIKit.framework in Frameworks */,
+				5E7BA61C198424B300B1DC48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7BA636198424B300B1DC48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7BA63B198424B300B1DC48 /* XCTest.framework in Frameworks */,
+				5E7BA63D198424B300B1DC48 /* UIKit.framework in Frameworks */,
+				5E7BA63C198424B300B1DC48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E7BA60F198424B300B1DC48 = {
+			isa = PBXGroup;
+			children = (
+				5E7BA621198424B300B1DC48 /* ParkMark-iOS */,
+				5E7BA640198424B300B1DC48 /* ParkMark-iOSTests */,
+				5E7BA61A198424B300B1DC48 /* Frameworks */,
+				5E7BA619198424B300B1DC48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E7BA619198424B300B1DC48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E7BA618198424B300B1DC48 /* ParkMark-iOS.app */,
+				5E7BA639198424B300B1DC48 /* ParkMark-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E7BA61A198424B300B1DC48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E7BA61B198424B300B1DC48 /* Foundation.framework */,
+				5E7BA61D198424B300B1DC48 /* CoreGraphics.framework */,
+				5E7BA61F198424B300B1DC48 /* UIKit.framework */,
+				5E7BA63A198424B300B1DC48 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E7BA621198424B300B1DC48 /* ParkMark-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5E7BA62A198424B300B1DC48 /* AppDelegate.h */,
+				5E7BA62B198424B300B1DC48 /* AppDelegate.m */,
+				5E7BA62D198424B300B1DC48 /* Main.storyboard */,
+				5E7BA630198424B300B1DC48 /* ViewController.h */,
+				5E7BA631198424B300B1DC48 /* ViewController.m */,
+				5E7BA633198424B300B1DC48 /* Images.xcassets */,
+				5E7BA622198424B300B1DC48 /* Supporting Files */,
+			);
+			path = "ParkMark-iOS";
+			sourceTree = "<group>";
+		};
+		5E7BA622198424B300B1DC48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E7BA623198424B300B1DC48 /* ParkMark-iOS-Info.plist */,
+				5E7BA624198424B300B1DC48 /* InfoPlist.strings */,
+				5E7BA627198424B300B1DC48 /* main.m */,
+				5E7BA629198424B300B1DC48 /* ParkMark-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E7BA640198424B300B1DC48 /* ParkMark-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E7BA646198424B300B1DC48 /* ParkMark_iOSTests.m */,
+				5E7BA641198424B300B1DC48 /* Supporting Files */,
+			);
+			path = "ParkMark-iOSTests";
+			sourceTree = "<group>";
+		};
+		5E7BA641198424B300B1DC48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E7BA642198424B300B1DC48 /* ParkMark-iOSTests-Info.plist */,
+				5E7BA643198424B300B1DC48 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E7BA617198424B300B1DC48 /* ParkMark-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E7BA64A198424B300B1DC48 /* Build configuration list for PBXNativeTarget "ParkMark-iOS" */;
+			buildPhases = (
+				5E7BA614198424B300B1DC48 /* Sources */,
+				5E7BA615198424B300B1DC48 /* Frameworks */,
+				5E7BA616198424B300B1DC48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ParkMark-iOS";
+			productName = "ParkMark-iOS";
+			productReference = 5E7BA618198424B300B1DC48 /* ParkMark-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E7BA638198424B300B1DC48 /* ParkMark-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E7BA64D198424B300B1DC48 /* Build configuration list for PBXNativeTarget "ParkMark-iOSTests" */;
+			buildPhases = (
+				5E7BA635198424B300B1DC48 /* Sources */,
+				5E7BA636198424B300B1DC48 /* Frameworks */,
+				5E7BA637198424B300B1DC48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E7BA63F198424B300B1DC48 /* PBXTargetDependency */,
+			);
+			name = "ParkMark-iOSTests";
+			productName = "ParkMark-iOSTests";
+			productReference = 5E7BA639198424B300B1DC48 /* ParkMark-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E7BA610198424B300B1DC48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Leif;
+				TargetAttributes = {
+					5E7BA638198424B300B1DC48 = {
+						TestTargetID = 5E7BA617198424B300B1DC48;
+					};
+				};
+			};
+			buildConfigurationList = 5E7BA613198424B300B1DC48 /* Build configuration list for PBXProject "ParkMark-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E7BA60F198424B300B1DC48;
+			productRefGroup = 5E7BA619198424B300B1DC48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E7BA617198424B300B1DC48 /* ParkMark-iOS */,
+				5E7BA638198424B300B1DC48 /* ParkMark-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E7BA616198424B300B1DC48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7BA634198424B300B1DC48 /* Images.xcassets in Resources */,
+				5E7BA626198424B300B1DC48 /* InfoPlist.strings in Resources */,
+				5E7BA62F198424B300B1DC48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7BA637198424B300B1DC48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7BA645198424B300B1DC48 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E7BA614198424B300B1DC48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7BA632198424B300B1DC48 /* ViewController.m in Sources */,
+				5E7BA62C198424B300B1DC48 /* AppDelegate.m in Sources */,
+				5E7BA628198424B300B1DC48 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E7BA635198424B300B1DC48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E7BA647198424B300B1DC48 /* ParkMark_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E7BA63F198424B300B1DC48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E7BA617198424B300B1DC48 /* ParkMark-iOS */;
+			targetProxy = 5E7BA63E198424B300B1DC48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E7BA624198424B300B1DC48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E7BA625198424B300B1DC48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E7BA62D198424B300B1DC48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E7BA62E198424B300B1DC48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E7BA643198424B300B1DC48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E7BA644198424B300B1DC48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E7BA648198424B300B1DC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E7BA649198424B300B1DC48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E7BA64B198424B300B1DC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkMark-iOS/ParkMark-iOS-Prefix.pch";
+				INFOPLIST_FILE = "ParkMark-iOS/ParkMark-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5E7BA64C198424B300B1DC48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkMark-iOS/ParkMark-iOS-Prefix.pch";
+				INFOPLIST_FILE = "ParkMark-iOS/ParkMark-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5E7BA64E198424B300B1DC48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParkMark-iOS.app/ParkMark-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkMark-iOS/ParkMark-iOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ParkMark-iOSTests/ParkMark-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5E7BA64F198424B300B1DC48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ParkMark-iOS.app/ParkMark-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ParkMark-iOS/ParkMark-iOS-Prefix.pch";
+				INFOPLIST_FILE = "ParkMark-iOSTests/ParkMark-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E7BA613198424B300B1DC48 /* Build configuration list for PBXProject "ParkMark-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7BA648198424B300B1DC48 /* Debug */,
+				5E7BA649198424B300B1DC48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E7BA64A198424B300B1DC48 /* Build configuration list for PBXNativeTarget "ParkMark-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7BA64B198424B300B1DC48 /* Debug */,
+				5E7BA64C198424B300B1DC48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E7BA64D198424B300B1DC48 /* Build configuration list for PBXNativeTarget "ParkMark-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E7BA64E198424B300B1DC48 /* Debug */,
+				5E7BA64F198424B300B1DC48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E7BA610198424B300B1DC48 /* Project object */;
+}
