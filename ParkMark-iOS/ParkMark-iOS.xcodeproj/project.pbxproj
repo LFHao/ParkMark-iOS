@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E2F9A6A198B13DC002BB16B /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F9A69198B13DC002BB16B /* ParkViewController.m */; };
+		5E2F9A6C198B1814002BB16B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2F9A6B198B1814002BB16B /* CoreLocation.framework */; };
+		5E2F9A6E198B1819002BB16B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2F9A6D198B1819002BB16B /* MapKit.framework */; };
 		5E7BA61C198424B300B1DC48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61B198424B300B1DC48 /* Foundation.framework */; };
 		5E7BA61E198424B300B1DC48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61D198424B300B1DC48 /* CoreGraphics.framework */; };
 		5E7BA620198424B300B1DC48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61F198424B300B1DC48 /* UIKit.framework */; };
@@ -21,6 +24,17 @@
 		5E7BA63D198424B300B1DC48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61F198424B300B1DC48 /* UIKit.framework */; };
 		5E7BA645198424B300B1DC48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA643198424B300B1DC48 /* InfoPlist.strings */; };
 		5E7BA647198424B300B1DC48 /* ParkMark_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA646198424B300B1DC48 /* ParkMark_iOSTests.m */; };
+		5EA56790198BFDA700BCFBDB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5678F198BFDA700BCFBDB /* Parse.framework */; };
+		5EA56792198BFE1500BCFBDB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA56791198BFE1500BCFBDB /* AudioToolbox.framework */; };
+		5EA56794198BFE4D00BCFBDB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA56793198BFE4D00BCFBDB /* CFNetwork.framework */; };
+		5EA56796198BFE6500BCFBDB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA56795198BFE6500BCFBDB /* libz.dylib */; };
+		5EA56798198BFE6F00BCFBDB /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA56797198BFE6F00BCFBDB /* MobileCoreServices.framework */; };
+		5EA5679A198BFE7700BCFBDB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA56799198BFE7700BCFBDB /* QuartzCore.framework */; };
+		5EA5679C198BFE7E00BCFBDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5679B198BFE7E00BCFBDB /* Security.framework */; };
+		5EA5679E198BFE8500BCFBDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5679D198BFE8500BCFBDB /* StoreKit.framework */; };
+		5EA567A0198BFE9100BCFBDB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5679F198BFE9100BCFBDB /* SystemConfiguration.framework */; };
+		5EAC197F198B4EB1000AC240 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC197E198B4EB1000AC240 /* MapViewController.m */; };
+		5EB5ABBC198BEA740017CAB0 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5ABBB198BEA740017CAB0 /* AlarmViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E2F9A68198B13DC002BB16B /* ParkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkViewController.h; sourceTree = "<group>"; };
+		5E2F9A69198B13DC002BB16B /* ParkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkViewController.m; sourceTree = "<group>"; };
+		5E2F9A6B198B1814002BB16B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5E2F9A6D198B1819002BB16B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		5E7BA618198424B300B1DC48 /* ParkMark-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParkMark-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7BA61B198424B300B1DC48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E7BA61D198424B300B1DC48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +71,19 @@
 		5E7BA642198424B300B1DC48 /* ParkMark-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParkMark-iOSTests-Info.plist"; sourceTree = "<group>"; };
 		5E7BA644198424B300B1DC48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E7BA646198424B300B1DC48 /* ParkMark_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParkMark_iOSTests.m; sourceTree = "<group>"; };
+		5EA5678F198BFDA700BCFBDB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		5EA56791198BFE1500BCFBDB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		5EA56793198BFE4D00BCFBDB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5EA56795198BFE6500BCFBDB /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5EA56797198BFE6F00BCFBDB /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		5EA56799198BFE7700BCFBDB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		5EA5679B198BFE7E00BCFBDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5EA5679D198BFE8500BCFBDB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5EA5679F198BFE9100BCFBDB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5EAC197D198B4EB1000AC240 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		5EAC197E198B4EB1000AC240 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5EB5ABBA198BEA740017CAB0 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		5EB5ABBB198BEA740017CAB0 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +91,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA567A0198BFE9100BCFBDB /* SystemConfiguration.framework in Frameworks */,
+				5EA5679E198BFE8500BCFBDB /* StoreKit.framework in Frameworks */,
+				5EA5679C198BFE7E00BCFBDB /* Security.framework in Frameworks */,
+				5EA5679A198BFE7700BCFBDB /* QuartzCore.framework in Frameworks */,
+				5EA56798198BFE6F00BCFBDB /* MobileCoreServices.framework in Frameworks */,
+				5EA56796198BFE6500BCFBDB /* libz.dylib in Frameworks */,
+				5E2F9A6C198B1814002BB16B /* CoreLocation.framework in Frameworks */,
 				5E7BA61E198424B300B1DC48 /* CoreGraphics.framework in Frameworks */,
+				5EA56794198BFE4D00BCFBDB /* CFNetwork.framework in Frameworks */,
+				5EA56792198BFE1500BCFBDB /* AudioToolbox.framework in Frameworks */,
+				5E2F9A6E198B1819002BB16B /* MapKit.framework in Frameworks */,
 				5E7BA620198424B300B1DC48 /* UIKit.framework in Frameworks */,
+				5EA56790198BFDA700BCFBDB /* Parse.framework in Frameworks */,
 				5E7BA61C198424B300B1DC48 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +143,17 @@
 		5E7BA61A198424B300B1DC48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EA5679F198BFE9100BCFBDB /* SystemConfiguration.framework */,
+				5EA5679D198BFE8500BCFBDB /* StoreKit.framework */,
+				5EA5679B198BFE7E00BCFBDB /* Security.framework */,
+				5EA56799198BFE7700BCFBDB /* QuartzCore.framework */,
+				5EA56797198BFE6F00BCFBDB /* MobileCoreServices.framework */,
+				5EA56795198BFE6500BCFBDB /* libz.dylib */,
+				5EA56793198BFE4D00BCFBDB /* CFNetwork.framework */,
+				5EA56791198BFE1500BCFBDB /* AudioToolbox.framework */,
+				5EA5678F198BFDA700BCFBDB /* Parse.framework */,
+				5E2F9A6D198B1819002BB16B /* MapKit.framework */,
+				5E2F9A6B198B1814002BB16B /* CoreLocation.framework */,
 				5E7BA61B198424B300B1DC48 /* Foundation.framework */,
 				5E7BA61D198424B300B1DC48 /* CoreGraphics.framework */,
 				5E7BA61F198424B300B1DC48 /* UIKit.framework */,
@@ -115,6 +168,12 @@
 				5E7BA62A198424B300B1DC48 /* AppDelegate.h */,
 				5E7BA62B198424B300B1DC48 /* AppDelegate.m */,
 				5E7BA62D198424B300B1DC48 /* Main.storyboard */,
+				5EB5ABBA198BEA740017CAB0 /* AlarmViewController.h */,
+				5EB5ABBB198BEA740017CAB0 /* AlarmViewController.m */,
+				5EAC197D198B4EB1000AC240 /* MapViewController.h */,
+				5EAC197E198B4EB1000AC240 /* MapViewController.m */,
+				5E2F9A68198B13DC002BB16B /* ParkViewController.h */,
+				5E2F9A69198B13DC002BB16B /* ParkViewController.m */,
 				5E7BA630198424B300B1DC48 /* ViewController.h */,
 				5E7BA631198424B300B1DC48 /* ViewController.m */,
 				5E7BA633198424B300B1DC48 /* Images.xcassets */,
@@ -249,7 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EB5ABBC198BEA740017CAB0 /* AlarmViewController.m in Sources */,
+				5E2F9A6A198B13DC002BB16B /* ParkViewController.m in Sources */,
 				5E7BA632198424B300B1DC48 /* ViewController.m in Sources */,
+				5EAC197F198B4EB1000AC240 /* MapViewController.m in Sources */,
 				5E7BA62C198424B300B1DC48 /* AppDelegate.m in Sources */,
 				5E7BA628198424B300B1DC48 /* main.m in Sources */,
 			);
@@ -376,6 +438,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParkMark-iOS/ParkMark-iOS-Prefix.pch";
 				INFOPLIST_FILE = "ParkMark-iOS/ParkMark-iOS-Info.plist";
@@ -389,6 +455,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ParkMark-iOS/ParkMark-iOS-Prefix.pch";
 				INFOPLIST_FILE = "ParkMark-iOS/ParkMark-iOS-Info.plist";
@@ -456,6 +526,7 @@
 				5E7BA64C198424B300B1DC48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E7BA64D198424B300B1DC48 /* Build configuration list for PBXNativeTarget "ParkMark-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +535,7 @@
 				5E7BA64F198424B300B1DC48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
