@@ -12,8 +12,9 @@
 @interface ParkViewController ()
 {
     PFFile *imageFile;
-    NSString *note;
+    NSString *noteContent;
     PFGeoPoint *point;
+
 }
 
 @end
@@ -37,6 +38,8 @@
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -112,7 +115,7 @@
 
 - (IBAction)addNote:(id)sender
 {
-    if(note == nil) {
+    if(noteContent == nil) {
         [sender setTitle:@"Add Note" forState:UIControlStateNormal];
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Add Note"
                                                        message: @"Please enter your parking info here"
@@ -124,7 +127,7 @@
         alertTextField.placeholder = @"5 floor, zone A, slot 304";
         [alert show];
     } else {
-        note = nil;
+        noteContent = nil;
         [sender setTitle:@"Add Note" forState:UIControlStateNormal];
     }
 }
@@ -133,7 +136,7 @@
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex == 1) {
-        note = [[alertView textFieldAtIndex:0] text];
+        noteContent = [[alertView textFieldAtIndex:0] text];
         NSLog(@"Note got");
         [_note setTitle:@"Delete Note" forState:UIControlStateNormal];
     }
@@ -171,8 +174,8 @@
 - (IBAction)mark:(id)sender
 {
     PFObject *record = [PFObject objectWithClassName:@"ParkHistory"];
-    if(note != nil) {
-        record[@"note"] = note;
+    if(noteContent != nil) {
+        record[@"note"] = noteContent;
         NSLog(@"Note is not null");
     } else {
         NSLog(@"Note is null");
@@ -190,7 +193,10 @@
     } else {
         NSLog(@"Location is not null");
     }
-    [record saveInBackground];
+    if(point !=nil || noteContent != nil || imageFile != nil) {
+        record[@"status"] = 0;
+        [record saveInBackground];
+    }
     
 }
 

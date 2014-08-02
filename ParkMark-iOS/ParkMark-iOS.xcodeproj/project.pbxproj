@@ -33,11 +33,12 @@
 		5EA5679E198BFE8500BCFBDB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5679D198BFE8500BCFBDB /* StoreKit.framework */; };
 		5EA567A0198BFE9100BCFBDB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA5679F198BFE9100BCFBDB /* SystemConfiguration.framework */; };
 		5EA567A2198C065500BCFBDB /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA567A1198C065500BCFBDB /* libz.1.1.3.dylib */; };
-		5EA567A6198C072C00BCFBDB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EA567A5198C072C00BCFBDB /* MBProgressHUD.m */; };
 		5EA567A8198CA91C00BCFBDB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA567A7198CA91C00BCFBDB /* EventKit.framework */; };
 		5EA567AA198CA92100BCFBDB /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA567A9198CA92100BCFBDB /* EventKitUI.framework */; };
 		5EAC197F198B4EB1000AC240 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC197E198B4EB1000AC240 /* MapViewController.m */; };
 		5EB5ABBC198BEA740017CAB0 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5ABBB198BEA740017CAB0 /* AlarmViewController.m */; };
+		EC45353E198D7A0400B699EF /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45353D198D7A0400B699EF /* ListViewController.m */; };
+		EC453541198D928100B699EF /* DirecationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC453540198D928100B699EF /* DirecationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,14 +85,16 @@
 		5EA5679D198BFE8500BCFBDB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5EA5679F198BFE9100BCFBDB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5EA567A1198C065500BCFBDB /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
-		5EA567A4198C072C00BCFBDB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		5EA567A5198C072C00BCFBDB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		5EA567A7198CA91C00BCFBDB /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		5EA567A9198CA92100BCFBDB /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		5EAC197D198B4EB1000AC240 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		5EAC197E198B4EB1000AC240 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		5EB5ABBA198BEA740017CAB0 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		5EB5ABBB198BEA740017CAB0 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		EC45353C198D7A0400B699EF /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		EC45353D198D7A0400B699EF /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		EC45353F198D928100B699EF /* DirecationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirecationViewController.h; sourceTree = "<group>"; };
+		EC453540198D928100B699EF /* DirecationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirecationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +184,10 @@
 				5E7BA62A198424B300B1DC48 /* AppDelegate.h */,
 				5E7BA62B198424B300B1DC48 /* AppDelegate.m */,
 				5E7BA62D198424B300B1DC48 /* Main.storyboard */,
+				EC45353F198D928100B699EF /* DirecationViewController.h */,
+				EC453540198D928100B699EF /* DirecationViewController.m */,
+				EC45353C198D7A0400B699EF /* ListViewController.h */,
+				EC45353D198D7A0400B699EF /* ListViewController.m */,
 				5EB5ABBA198BEA740017CAB0 /* AlarmViewController.h */,
 				5EB5ABBB198BEA740017CAB0 /* AlarmViewController.m */,
 				5EAC197D198B4EB1000AC240 /* MapViewController.h */,
@@ -190,7 +197,6 @@
 				5E7BA630198424B300B1DC48 /* ViewController.h */,
 				5E7BA631198424B300B1DC48 /* ViewController.m */,
 				5E7BA633198424B300B1DC48 /* Images.xcassets */,
-				5EA567A3198C06FB00BCFBDB /* MBProgressHUD */,
 				5E7BA622198424B300B1DC48 /* Supporting Files */,
 			);
 			path = "ParkMark-iOS";
@@ -223,15 +229,6 @@
 				5E7BA643198424B300B1DC48 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		5EA567A3198C06FB00BCFBDB /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				5EA567A4198C072C00BCFBDB /* MBProgressHUD.h */,
-				5EA567A5198C072C00BCFBDB /* MBProgressHUD.m */,
-			);
-			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,11 +330,12 @@
 			files = (
 				5EB5ABBC198BEA740017CAB0 /* AlarmViewController.m in Sources */,
 				5E2F9A6A198B13DC002BB16B /* ParkViewController.m in Sources */,
+				EC45353E198D7A0400B699EF /* ListViewController.m in Sources */,
 				5E7BA632198424B300B1DC48 /* ViewController.m in Sources */,
 				5EAC197F198B4EB1000AC240 /* MapViewController.m in Sources */,
 				5E7BA62C198424B300B1DC48 /* AppDelegate.m in Sources */,
+				EC453541198D928100B699EF /* DirecationViewController.m in Sources */,
 				5E7BA628198424B300B1DC48 /* main.m in Sources */,
-				5EA567A6198C072C00BCFBDB /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

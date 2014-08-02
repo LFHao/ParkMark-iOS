@@ -8,17 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
-#import "MBProgressHUD.h"
 #import <MapKit/MapKit.h>
 #import <EventKit/EventKit.h>
 
 @interface ParkViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate>
-{
-    //IBOutlet UIScrollView *photoScrollView;
-    //NSMutableArray *allImages;
-    
-    MBProgressHUD *HUD;
-}
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
 
