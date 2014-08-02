@@ -44,7 +44,9 @@
     [_mapView setRegion:[_mapView regionThatFits:region] animated:YES];
 }
 
-
+- (IBAction)MarkLocation:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 /*
 #pragma mark - Navigation
@@ -56,5 +58,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

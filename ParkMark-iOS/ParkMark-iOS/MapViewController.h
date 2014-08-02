@@ -14,5 +14,6 @@
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
+- (IBAction)MarkLocation:(id)sender;
 
 @end

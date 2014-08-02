@@ -7,6 +7,7 @@
 //
 
 #import "ParkViewController.h"
+#import "MapViewController.h"
 
 @interface ParkViewController ()
 {
@@ -59,63 +60,27 @@
 
 - (IBAction)takePhoto:(id)sender
 {
-    // Create image picker controller
-    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
-    // Set source to the camera
-    imagePicker.sourceType =  UIImagePickerControllerSourceTypeCamera;
-    // Delegate is self
-    imagePicker.delegate = self;
-    // Show image picker
-    [self presentViewController:imagePicker animated:YES completion:nil];
-}
-
-- (void)uploadImage:(NSData *)imageData
-{
-    imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
-    
-    HUD = [[MBProgressHUD alloc] initWithView:self.view];
-    [self.view addSubview:HUD];
-    
-    // Set determinate mode
-    HUD.mode = MBProgressHUDModeDeterminate;
-    HUD.delegate = self;
-    HUD.labelText = @"Uploading";
-    [HUD show:YES];
-    
-    // Save PFFile
-    [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error) {
-            //Hide determinate HUD
-            [HUD hide:YES];
-            
-            // Show checkmark
-            HUD = [[MBProgressHUD alloc] initWithView:self.view];
-            [self.view addSubview:HUD];
-            
-            // The sample image is based on the work by http://www.pixelpressicons.com, http://creativecommons.org/licenses/by/2.5/ca/
-            // Make the customViews 37 by 37 pixels for best results (those are the bounds of the build-in progress indicators)
-            HUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"37x-Checkmark.png"]];
-            
-            // Set custom view mode
-            HUD.mode = MBProgressHUDModeCustomView;
-            HUD.delegate = self;
-        }
-        else{
-            [HUD hide:YES];
-            // Log details of the failure
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-    } progressBlock:^(int percentDone) {
-        // Update your progress spinner here. percentDone will be between 0 and 100.
-        HUD.progress = (float)percentDone/100;
-    }];
+    if(imageFile == nil) {
+        [sender setTitle:@"Add Photo" forState:UIControlStateNormal];
+        // Create image picker controller
+        UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+        // Set source to the camera
+        imagePicker.sourceType =  UIImagePickerControllerSourceTypeCamera;
+        // Delegate is self
+        imagePicker.delegate = self;
+        // Show image picker
+        [self presentViewController:imagePicker animated:YES completion:nil];
+    } else {
+        imageFile = nil;
+        [sender setTitle:@"Add Photo" forState:UIControlStateNormal];
+    }
 }
 
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     // Access the uncropped image from info dictionary
-    UIImage *image = [info objectForKey:@"UIImagePickerControllerOriginalImage"];
+    UIImage *image = info[UIImagePickerControllerOriginalImage];
     
     // Dismiss controller
     [picker dismissViewControllerAnimated:YES completion:nil];
@@ -128,9 +93,17 @@
     
     // Upload image
     NSData *imageData = UIImageJPEGRepresentation(smallImage, 0.05f);
-    [self uploadImage:imageData];
+    imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
+    NSLog(@"Image got");
+    [_photo setTitle:@"Delete Photo" forState:UIControlStateNormal];
 }
 
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+    [_photo setTitle:@"Add Photo" forState:UIControlStateNormal];
+    
+}
 
 /******************************************END of take photo*****************************************************/
 
@@ -139,21 +112,31 @@
 
 - (IBAction)addNote:(id)sender
 {
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Add Note"
-                                                   message: @"Please enter your parking info here"
-                                                  delegate: self
-                                         cancelButtonTitle:@"Cancel"
-                                         otherButtonTitles:@"Add", nil];
-    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
-    UITextField * alertTextField = [alert textFieldAtIndex:0];
-    alertTextField.placeholder = @"5 floor, zone A, slot 304";
-    [alert show];
+    if(note == nil) {
+        [sender setTitle:@"Add Note" forState:UIControlStateNormal];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle: @"Add Note"
+                                                       message: @"Please enter your parking info here"
+                                                      delegate: self
+                                             cancelButtonTitle:@"Cancel"
+                                             otherButtonTitles:@"Add", nil];
+        alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+        UITextField * alertTextField = [alert textFieldAtIndex:0];
+        alertTextField.placeholder = @"5 floor, zone A, slot 304";
+        [alert show];
+    } else {
+        note = nil;
+        [sender setTitle:@"Add Note" forState:UIControlStateNormal];
+    }
 }
 
 
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    note = [[alertView textFieldAtIndex:0] text];
+    if(buttonIndex == 1) {
+        note = [[alertView textFieldAtIndex:0] text];
+        NSLog(@"Note got");
+        [_note setTitle:@"Delete Note" forState:UIControlStateNormal];
+    }
 }
 
 /******************************************END of add note*****************************************************/
@@ -163,28 +146,52 @@
 
 - (IBAction)addLocation:(id)sender
 {
-    [_locationManager startUpdatingLocation];
-    point = [PFGeoPoint geoPointWithLatitude:_locationManager.location.coordinate.latitude
-                                               longitude:_locationManager.location.coordinate.longitude];
+    if(point == nil) {
+        [sender setTitle:@"Add Location" forState:UIControlStateNormal];
+        [_locationManager startUpdatingLocation];
+        point = [PFGeoPoint geoPointWithLatitude:_locationManager.location.coordinate.latitude
+                                       longitude:_locationManager.location.coordinate.longitude];
+        NSLog(@"Location got");
+        [sender setTitle:@"Delete Location" forState:UIControlStateNormal];
+        [self performSegueWithIdentifier:@"locationSegue" sender:self];
+    } else {
+        point = nil;
+        [sender setTitle:@"Add Location" forState:UIControlStateNormal];
+    }
 }
-
-
 
 
 /******************************************End of add location*******************************************************/
 
 
 
-/******************************************Mark*******************************************************/
+/******************************************Mark & Upload to Parse*******************************************************/
 
 
 - (IBAction)mark:(id)sender
 {
     PFObject *record = [PFObject objectWithClassName:@"ParkHistory"];
-    record[@"note"] = note;
-    record[@"image"] = imageFile;
-    record[@"geoLocation"] = point;
+    if(note != nil) {
+        record[@"note"] = note;
+        NSLog(@"Note is not null");
+    } else {
+        NSLog(@"Note is null");
+    }
+    if(imageFile != nil) {
+        record[@"image"] = imageFile;
+        NSLog(@"Image is not null");
+    } else {
+        NSLog(@"Image is not null");
+    }
+    
+    if(point != nil) {
+        record[@"geoLocation"] = point;
+        NSLog(@"Location is not null");
+    } else {
+        NSLog(@"Location is not null");
+    }
     [record saveInBackground];
+    
 }
 
 

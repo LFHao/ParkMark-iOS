@@ -10,9 +10,9 @@
 #import <Parse/Parse.h>
 #import "MBProgressHUD.h"
 #import <MapKit/MapKit.h>
+#import <EventKit/EventKit.h>
 
-
-@interface ParkViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, MBProgressHUDDelegate, CLLocationManagerDelegate>
+@interface ParkViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate>
 {
     //IBOutlet UIScrollView *photoScrollView;
     //NSMutableArray *allImages;
@@ -21,6 +21,7 @@
 }
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
+
 
 
 - (IBAction)takePhoto:(id)sender;
@@ -33,5 +34,8 @@
 
 - (IBAction)mark:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIButton *location;
+@property (strong, nonatomic) IBOutlet UIButton *photo;
+@property (strong, nonatomic) IBOutlet UIButton *note;
 
 @end
