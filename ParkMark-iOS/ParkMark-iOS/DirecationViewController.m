@@ -16,6 +16,9 @@
 @implementation DirecationViewController
 
 
+@synthesize record;
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -23,9 +26,16 @@
     
     self.mapView.delegate = self;
     
-    PFFile *theImage = _selectedRecord[@"image"];
+    //Get data
+    
+    PFFile *theImage = record[@"image"];
     NSData *imageData = [theImage getData];
-    _imageView.image = [UIImage imageWithData:imageData];
+    self.imageView.image = [UIImage imageWithData:imageData];
+    
+    self.note.text = record[@"note"];
+    NSLog(@"Data got");
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,14 +46,32 @@
 
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 8000, 8000);
+
+    PFGeoPoint *cur = record[@"geoLocation"];
+    CLLocationCoordinate2D coord;
+    coord.longitude = cur.longitude;
+    coord.latitude = cur.latitude;
+    
+    //Drop pin
+    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+    [annotation setCoordinate:coord];
+    annotation.title = @"Pick me here!";
+    [_mapView addAnnotation:annotation];
+                                          
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coord, 2000, 2000);
     [_mapView setRegion:[_mapView regionThatFits:region] animated:YES];
+    NSLog(@"Drop pin");
 }
 
 
-- (IBAction)found:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+- (IBAction)getDirection:(id)sender
+{
+    PFGeoPoint * toLocation = record[@"geoLocation"];
+    NSString *url = [NSString stringWithFormat:@"http://maps.apple.com/maps?daddr=%f,%f", toLocation.latitude, toLocation.longitude];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
 }
+
+
 
 /*
 #pragma mark - Navigation

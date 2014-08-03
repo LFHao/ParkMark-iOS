@@ -12,12 +12,16 @@
 
 @interface DirecationViewController : UIViewController
 
-@property (strong, nonatomic) PFObject *selectedRecord;
+
+@property (strong, nonatomic) PFObject *record;
+
 
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
-- (IBAction)found:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *note;
+
+- (IBAction)getDirection:(id)sender;
 
 @end
