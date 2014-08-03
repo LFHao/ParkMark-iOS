@@ -14,7 +14,8 @@
     PFFile *imageFile;
     NSString *noteContent;
     PFGeoPoint *point;
-
+    BOOL imageFlag;
+    BOOL pointFlag;
 }
 
 @end
@@ -75,6 +76,7 @@
         [self presentViewController:imagePicker animated:YES completion:nil];
     } else {
         imageFile = nil;
+         NSLog(@"Photo delete");
         [sender setTitle:@"Add Photo" forState:UIControlStateNormal];
     }
 }
@@ -128,6 +130,7 @@
         [alert show];
     } else {
         noteContent = nil;
+        NSLog(@"Note delete");
         [sender setTitle:@"Add Note" forState:UIControlStateNormal];
     }
 }
@@ -159,6 +162,7 @@
         [self performSegueWithIdentifier:@"locationSegue" sender:self];
     } else {
         point = nil;
+        NSLog(@"Location delete");
         [sender setTitle:@"Add Location" forState:UIControlStateNormal];
     }
 }
@@ -184,7 +188,7 @@
 - (IBAction)mark:(id)sender
 {
     PFObject *record = [PFObject objectWithClassName:@"ParkHistory"];
-    if(noteContent != nil) {
+    if(noteContent != NULL) {
         record[@"note"] = noteContent;
         NSLog(@"Note is not null");
     } else {
@@ -194,16 +198,16 @@
         record[@"image"] = imageFile;
         NSLog(@"Image is not null");
     } else {
-        NSLog(@"Image is not null");
+        NSLog(@"Image is null");
     }
     
     if(point != nil) {
         record[@"geoLocation"] = point;
         NSLog(@"Location is not null");
     } else {
-        NSLog(@"Location is not null");
+        NSLog(@"Location is null");
     }
-    if(point !=nil || noteContent != nil || imageFile != nil) {
+    if(point != nil || noteContent != NULL || imageFile != nil) {
         record[@"status"] = 0;
         [record saveInBackground];
     }
