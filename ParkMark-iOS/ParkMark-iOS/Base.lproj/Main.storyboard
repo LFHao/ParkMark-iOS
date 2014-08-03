@@ -168,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="773" y="-278"/>
         </scene>
-        <!--View Controller-->
+        <!--Direcation View Controller - Direction-->
         <scene sceneID="sJy-aj-lUV">
             <objects>
-                <viewController id="kJu-pq-w3A" sceneMemberID="viewController">
+                <viewController id="kJu-pq-w3A" customClass="DirecationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XLY-KQ-UOC"/>
                         <viewControllerLayoutGuide type="bottom" id="mrf-eU-9tz"/>
@@ -180,7 +180,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="D2I-yA-ycN">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D2I-yA-ycN">
                                 <rect key="frame" x="0.0" y="64" width="320" height="214"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
@@ -201,11 +201,18 @@
                                 <state key="normal" title="Found">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="found:" destination="kJu-pq-w3A" eventType="touchUpInside" id="q4F-iA-lrw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pxZ-Lb-lQt"/>
+                    <navigationItem key="navigationItem" title="Direction" id="pxZ-Lb-lQt"/>
+                    <connections>
+                        <outlet property="imageView" destination="dJd-9Z-tg3" id="pKm-CJ-aPw"/>
+                        <outlet property="mapView" destination="D2I-yA-ycN" id="V6d-It-BBu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvb-cL-MkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,7 +383,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="MarkLocation:" destination="qkn-Tp-0Ct" eventType="touchUpInside" id="jg4-eL-8qI"/>
+                                    <action selector="markLocation:" destination="qkn-Tp-0Ct" eventType="touchUpInside" id="yDn-cG-Qb2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -398,6 +405,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="QJq-9J-UcA"/>
+        <segue reference="UVn-0R-it8"/>
     </inferredMetricsTieBreakers>
 </document>

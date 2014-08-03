@@ -15,26 +15,34 @@
 
 @implementation DirecationViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.mapView.delegate = self;
+    
+    PFFile *theImage = _selectedRecord[@"image"];
+    NSData *imageData = [theImage getData];
+    _imageView.image = [UIImage imageWithData:imageData];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 8000, 8000);
+    [_mapView setRegion:[_mapView regionThatFits:region] animated:YES];
+}
+
+
+- (IBAction)found:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*
@@ -47,5 +55,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

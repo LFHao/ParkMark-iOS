@@ -15,15 +15,6 @@
 @implementation MapViewController
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -44,7 +35,7 @@
     [_mapView setRegion:[_mapView regionThatFits:region] animated:YES];
 }
 
-- (IBAction)MarkLocation:(id)sender {
+- (IBAction)markLocation:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
 

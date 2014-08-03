@@ -8,6 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AlarmViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
-
+@interface AlarmViewController : UIViewController
 @end

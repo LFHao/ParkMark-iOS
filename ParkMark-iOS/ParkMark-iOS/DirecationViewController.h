@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 #import <Parse/Parse.h>
 
 @interface DirecationViewController : UIViewController
 
 @property (strong, nonatomic) PFObject *selectedRecord;
 
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+
+- (IBAction)found:(id)sender;
 
 @end
