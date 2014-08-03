@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Social/Social.h>
 
 @interface SocialViewController : UIViewController
 
 - (IBAction)done:(id)sender;
+- (IBAction)facebook:(id)sender;
 
 
 @end

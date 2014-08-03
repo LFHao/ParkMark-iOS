@@ -7,7 +7,7 @@
 //
 
 #import "SocialViewController.h"
-
+#import <Social/Social.h>
 @interface SocialViewController ()
 
 @end
@@ -39,6 +39,23 @@
 - (IBAction)done:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+//- (IBAction)facebook:(id)sender {
+//    
+//    
+//    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+//        SLComposeViewController *fbSheetOBJ = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+//        
+//        [fbSheetOBJ setInitialText:@"First post from my iOS application in weblineindia"];
+//        [self presentViewController:fbSheetOBJ animated:YES completion:Nil];
+//    }
+//}
+
+- (IBAction)facebook:(id)sender {
+    [FBSession openActiveSessionWithReadPermissions:nil allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error){
+        //code user has loged in
+    }];
+  }
 
 
 /*
