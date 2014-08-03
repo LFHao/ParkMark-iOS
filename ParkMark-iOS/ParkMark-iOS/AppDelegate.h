@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  ParkMark-iOS
 //
-//  Created by Leif on 7/26/14.
+//  Created by Longfei Hao on 7/26/14.
 //  Copyright (c) 2014 Leif. All rights reserved.
 //
 

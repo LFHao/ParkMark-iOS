@@ -2,7 +2,7 @@
 //  AlarmViewController.m
 //  ParkMark-iOS
 //
-//  Created by Leif on 8/1/14.
+//  Created by Longfei Hao on 8/1/14.
 //  Copyright (c) 2014 Leif. All rights reserved.
 //
 
@@ -45,5 +45,32 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)add:(id)sender {
+    
+    NSDate *pickerDate = [self.datapicker date];
+    
+    // Schedule the notification
+    UILocalNotification* localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = pickerDate;
+    localNotification.alertBody = @"Pick your car!";
+    localNotification.alertAction = @"Show me the item";
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+    
+    // Dismiss the view controller
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
+
+- (IBAction)cancel:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
+
+
 
 @end

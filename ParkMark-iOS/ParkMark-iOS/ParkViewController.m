@@ -2,7 +2,7 @@
 //  ParkViewController.m
 //  ParkMark-iOS
 //
-//  Created by Leif on 7/31/14.
+//  Created by Longfei Hao  on 7/31/14.
 //  Copyright (c) 2014 Leif. All rights reserved.
 //
 
@@ -165,6 +165,16 @@
 
 
 /******************************************End of add location*******************************************************/
+
+
+
+/******************************************Add alarm*******************************************************/
+- (IBAction)addAlarm:(id)sender
+{
+    [self performSegueWithIdentifier:@"alarmSegue" sender:self];
+}
+/******************************************End of add alarm*******************************************************/
+
 
 
 

@@ -10,12 +10,14 @@
 		5E2F9A6A198B13DC002BB16B /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F9A69198B13DC002BB16B /* ParkViewController.m */; };
 		5E2F9A6C198B1814002BB16B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2F9A6B198B1814002BB16B /* CoreLocation.framework */; };
 		5E2F9A6E198B1819002BB16B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2F9A6D198B1819002BB16B /* MapKit.framework */; };
+		5E605604198DF5C3002DA794 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E605603198DF5C3002DA794 /* AlarmViewController.m */; };
+		5E605607198DF5EC002DA794 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E605606198DF5EC002DA794 /* AppDelegate.m */; };
+		5E60560C198DF8D7002DA794 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E60560B198DF8D7002DA794 /* SocialViewController.m */; };
 		5E7BA61C198424B300B1DC48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61B198424B300B1DC48 /* Foundation.framework */; };
 		5E7BA61E198424B300B1DC48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61D198424B300B1DC48 /* CoreGraphics.framework */; };
 		5E7BA620198424B300B1DC48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61F198424B300B1DC48 /* UIKit.framework */; };
 		5E7BA626198424B300B1DC48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA624198424B300B1DC48 /* InfoPlist.strings */; };
 		5E7BA628198424B300B1DC48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA627198424B300B1DC48 /* main.m */; };
-		5E7BA62C198424B300B1DC48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA62B198424B300B1DC48 /* AppDelegate.m */; };
 		5E7BA62F198424B300B1DC48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA62D198424B300B1DC48 /* Main.storyboard */; };
 		5E7BA632198424B300B1DC48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA631198424B300B1DC48 /* ViewController.m */; };
 		5E7BA634198424B300B1DC48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA633198424B300B1DC48 /* Images.xcassets */; };
@@ -36,7 +38,6 @@
 		5EA567A8198CA91C00BCFBDB /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA567A7198CA91C00BCFBDB /* EventKit.framework */; };
 		5EA567AA198CA92100BCFBDB /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA567A9198CA92100BCFBDB /* EventKitUI.framework */; };
 		5EAC197F198B4EB1000AC240 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EAC197E198B4EB1000AC240 /* MapViewController.m */; };
-		5EB5ABBC198BEA740017CAB0 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB5ABBB198BEA740017CAB0 /* AlarmViewController.m */; };
 		EC45353E198D7A0400B699EF /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45353D198D7A0400B699EF /* ListViewController.m */; };
 		EC453541198D928100B699EF /* DirecationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC453540198D928100B699EF /* DirecationViewController.m */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,12 @@
 		5E2F9A69198B13DC002BB16B /* ParkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkViewController.m; sourceTree = "<group>"; };
 		5E2F9A6B198B1814002BB16B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5E2F9A6D198B1819002BB16B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5E605602198DF5C3002DA794 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		5E605603198DF5C3002DA794 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		5E605605198DF5EC002DA794 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E605606198DF5EC002DA794 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E60560A198DF8D7002DA794 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		5E60560B198DF8D7002DA794 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
 		5E7BA618198424B300B1DC48 /* ParkMark-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ParkMark-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7BA61B198424B300B1DC48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E7BA61D198424B300B1DC48 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +71,6 @@
 		5E7BA625198424B300B1DC48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E7BA627198424B300B1DC48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5E7BA629198424B300B1DC48 /* ParkMark-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParkMark-iOS-Prefix.pch"; sourceTree = "<group>"; };
-		5E7BA62A198424B300B1DC48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5E7BA62B198424B300B1DC48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5E7BA62E198424B300B1DC48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E7BA630198424B300B1DC48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5E7BA631198424B300B1DC48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -89,8 +94,6 @@
 		5EA567A9198CA92100BCFBDB /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		5EAC197D198B4EB1000AC240 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		5EAC197E198B4EB1000AC240 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		5EB5ABBA198BEA740017CAB0 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
-		5EB5ABBB198BEA740017CAB0 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		EC45353C198D7A0400B699EF /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
 		EC45353D198D7A0400B699EF /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		EC45353F198D928100B699EF /* DirecationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirecationViewController.h; sourceTree = "<group>"; };
@@ -181,15 +184,17 @@
 		5E7BA621198424B300B1DC48 /* ParkMark-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				5E7BA62A198424B300B1DC48 /* AppDelegate.h */,
-				5E7BA62B198424B300B1DC48 /* AppDelegate.m */,
+				5E605605198DF5EC002DA794 /* AppDelegate.h */,
+				5E605606198DF5EC002DA794 /* AppDelegate.m */,
 				5E7BA62D198424B300B1DC48 /* Main.storyboard */,
+				5E60560A198DF8D7002DA794 /* SocialViewController.h */,
+				5E60560B198DF8D7002DA794 /* SocialViewController.m */,
+				5E605602198DF5C3002DA794 /* AlarmViewController.h */,
+				5E605603198DF5C3002DA794 /* AlarmViewController.m */,
 				EC45353F198D928100B699EF /* DirecationViewController.h */,
 				EC453540198D928100B699EF /* DirecationViewController.m */,
 				EC45353C198D7A0400B699EF /* ListViewController.h */,
 				EC45353D198D7A0400B699EF /* ListViewController.m */,
-				5EB5ABBA198BEA740017CAB0 /* AlarmViewController.h */,
-				5EB5ABBB198BEA740017CAB0 /* AlarmViewController.m */,
 				5EAC197D198B4EB1000AC240 /* MapViewController.h */,
 				5EAC197E198B4EB1000AC240 /* MapViewController.m */,
 				5E2F9A68198B13DC002BB16B /* ParkViewController.h */,
@@ -328,12 +333,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EB5ABBC198BEA740017CAB0 /* AlarmViewController.m in Sources */,
 				5E2F9A6A198B13DC002BB16B /* ParkViewController.m in Sources */,
 				EC45353E198D7A0400B699EF /* ListViewController.m in Sources */,
 				5E7BA632198424B300B1DC48 /* ViewController.m in Sources */,
+				5E60560C198DF8D7002DA794 /* SocialViewController.m in Sources */,
 				5EAC197F198B4EB1000AC240 /* MapViewController.m in Sources */,
-				5E7BA62C198424B300B1DC48 /* AppDelegate.m in Sources */,
+				5E605607198DF5EC002DA794 /* AppDelegate.m in Sources */,
+				5E605604198DF5C3002DA794 /* AlarmViewController.m in Sources */,
 				EC453541198D928100B699EF /* DirecationViewController.m in Sources */,
 				5E7BA628198424B300B1DC48 /* main.m in Sources */,
 			);

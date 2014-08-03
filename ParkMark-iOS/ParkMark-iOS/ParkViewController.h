@@ -2,7 +2,7 @@
 //  ParkViewController.h
 //  ParkMark-iOS
 //
-//  Created by Leif on 7/31/14.
+//  Created by Longfei Hao  on 7/31/14.
 //  Copyright (c) 2014 Leif. All rights reserved.
 //
 
@@ -23,12 +23,13 @@
 
 - (IBAction)addLocation:(id)sender;
 
-//- (IBAction)addAlarm:(id)sender;
+- (IBAction)addAlarm:(id)sender;
 
 - (IBAction)mark:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIButton *location;
 @property (strong, nonatomic) IBOutlet UIButton *photo;
 @property (strong, nonatomic) IBOutlet UIButton *note;
+@property (strong, nonatomic) IBOutlet UIButton *alarm;
 
 @end

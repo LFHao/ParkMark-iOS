@@ -124,15 +124,15 @@
             </objects>
             <point key="canvasLocation" x="206" y="410"/>
         </scene>
-        <!--View Controller-->
+        <!--Social View Controller-->
         <scene sceneID="YeG-yq-ed6">
             <objects>
-                <viewController id="wHQ-Eh-q8C" sceneMemberID="viewController">
+                <viewController id="wHQ-Eh-q8C" customClass="SocialViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DBE-5E-Ajw"/>
                         <viewControllerLayoutGuide type="bottom" id="lXo-20-ND5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lT1-XM-Veb">
+                    <view key="view" contentMode="scaleToFill" id="lT1-XM-Veb" customClass="so">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
@@ -150,7 +150,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="80c-SL-wf3" kind="push" id="UVn-0R-it8"/>
+                                    <action selector="done:" destination="wHQ-Eh-q8C" eventType="touchUpInside" id="shv-N7-owG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkt-uA-rFF">
@@ -166,7 +166,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bux-8k-690" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773" y="-278"/>
+            <point key="canvasLocation" x="1241" y="-278"/>
         </scene>
         <!--Direcation View Controller - Direction-->
         <scene sceneID="sJy-aj-lUV">
@@ -216,9 +216,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cvb-cL-MkX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773" y="410"/>
+            <point key="canvasLocation" x="931" y="410"/>
         </scene>
-        <!--Alarm View Controller-->
+        <!--Alarm View Controller - Reminder-->
         <scene sceneID="ykW-eD-h3g">
             <objects>
                 <viewController id="x4b-89-AUz" customClass="AlarmViewController" sceneMemberID="viewController">
@@ -258,28 +258,44 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 </data>
                                 </timeZone>
                             </datePicker>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bB-rf-yag">
-                                <rect key="frame" x="139" y="142" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remind me to pick the car at:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6bB-rf-yag">
+                                <rect key="frame" x="49" y="153" width="227" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNL-HO-Zip">
-                                <rect key="frame" x="124" y="439" width="72" height="30"/>
+                                <rect key="frame" x="74" y="439" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add Alarm">
+                                <state key="normal" title="Add">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="add:" destination="x4b-89-AUz" eventType="touchUpInside" id="WLf-kW-8UX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IpB-vk-LyI">
+                                <rect key="frame" x="194" y="439" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="x4b-89-AUz" eventType="touchUpInside" id="lh9-BT-4vw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="F5t-eo-bhj"/>
+                    <navigationItem key="navigationItem" title="Reminder" id="F5t-eo-bhj"/>
+                    <connections>
+                        <outlet property="datapicker" destination="9tZ-OI-1Nz" id="TDo-6K-45B"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jvd-gL-FBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-184" y="-704"/>
+            <point key="canvasLocation" x="954" y="-1125"/>
         </scene>
         <!--Park View Controller - Mark-->
         <scene sceneID="IFu-Rx-NVe">
@@ -341,8 +357,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="addAlarm:" destination="80c-SL-wf3" eventType="touchUpInside" id="5Yu-eq-WU4"/>
-                                    <segue destination="x4b-89-AUz" kind="modal" id="QD8-WB-ZzG"/>
+                                    <action selector="addAlarm:" destination="80c-SL-wf3" eventType="touchUpInside" id="MJq-vD-x3P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -350,17 +365,19 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </view>
                     <navigationItem key="navigationItem" title="Mark" id="O2S-V3-RIQ"/>
                     <connections>
+                        <outlet property="alarm" destination="17R-R3-wdf" id="PDQ-AV-cdI"/>
                         <outlet property="location" destination="NMz-oL-8R9" id="pnp-ov-fgb"/>
                         <outlet property="note" destination="icA-qC-eT5" id="ud9-hO-Y5n"/>
                         <outlet property="photo" destination="hxa-Yf-kml" id="EQt-u5-J89"/>
                         <segue destination="qkn-Tp-0Ct" kind="push" identifier="locationSegue" id="lwM-kP-de6"/>
+                        <segue destination="x4b-89-AUz" kind="push" identifier="alarmSegue" id="Drh-0B-usR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5yq-rf-9QL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="206" y="-278"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Map View Controller - Map-->
         <scene sceneID="hsb-JU-c3R">
             <objects>
                 <viewController id="qkn-Tp-0Ct" customClass="MapViewController" sceneMemberID="viewController">
@@ -389,14 +406,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="h9M-fq-2Io"/>
+                    <navigationItem key="navigationItem" title="Map" id="h9M-fq-2Io"/>
                     <connections>
                         <outlet property="mapView" destination="eFs-mR-TPb" id="pES-02-WT7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afr-xC-IrI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="-1041"/>
+            <point key="canvasLocation" x="1644" y="-861"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -404,7 +421,4 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="UVn-0R-it8"/>
-    </inferredMetricsTieBreakers>
 </document>
