@@ -14,8 +14,6 @@
     PFFile *imageFile;
     NSString *noteContent;
     PFGeoPoint *point;
-    BOOL imageFlag;
-    BOOL pointFlag;
 }
 
 @end
@@ -192,6 +190,7 @@
         record[@"note"] = noteContent;
         NSLog(@"Note is not null");
     } else {
+        record[@"note"] = @"Ohoh, no note recorded.";
         NSLog(@"Note is null");
     }
     if(imageFile != nil) {
@@ -208,10 +207,11 @@
         NSLog(@"Location is null");
     }
     if(point != nil || noteContent != NULL || imageFile != nil) {
-        record[@"status"] = 0;
+        record[@"status"] = @"n";
         [record saveInBackground];
+    } else {
+        NSLog(@"No objects in record");
     }
-    
 }
 
 

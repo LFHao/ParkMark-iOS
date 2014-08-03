@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E06C342198E8EA700883319 /* CellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E06C341198E8EA600883319 /* CellTableViewCell.m */; };
 		5E2F9A6A198B13DC002BB16B /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F9A69198B13DC002BB16B /* ParkViewController.m */; };
 		5E2F9A6C198B1814002BB16B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2F9A6B198B1814002BB16B /* CoreLocation.framework */; };
 		5E2F9A6E198B1819002BB16B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2F9A6D198B1819002BB16B /* MapKit.framework */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E06C340198E8EA600883319 /* CellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTableViewCell.h; sourceTree = "<group>"; };
+		5E06C341198E8EA600883319 /* CellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
 		5E2F9A68198B13DC002BB16B /* ParkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkViewController.h; sourceTree = "<group>"; };
 		5E2F9A69198B13DC002BB16B /* ParkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkViewController.m; sourceTree = "<group>"; };
 		5E2F9A6B198B1814002BB16B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -195,6 +198,8 @@
 				EC453540198D928100B699EF /* DirecationViewController.m */,
 				EC45353C198D7A0400B699EF /* ListViewController.h */,
 				EC45353D198D7A0400B699EF /* ListViewController.m */,
+				5E06C340198E8EA600883319 /* CellTableViewCell.h */,
+				5E06C341198E8EA600883319 /* CellTableViewCell.m */,
 				5EAC197D198B4EB1000AC240 /* MapViewController.h */,
 				5EAC197E198B4EB1000AC240 /* MapViewController.m */,
 				5E2F9A68198B13DC002BB16B /* ParkViewController.h */,
@@ -342,6 +347,7 @@
 				5E605604198DF5C3002DA794 /* AlarmViewController.m in Sources */,
 				EC453541198D928100B699EF /* DirecationViewController.m in Sources */,
 				5E7BA628198424B300B1DC48 /* main.m in Sources */,
+				5E06C342198E8EA700883319 /* CellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

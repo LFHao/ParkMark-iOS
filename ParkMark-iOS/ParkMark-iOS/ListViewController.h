@@ -13,8 +13,6 @@
 
 @property (strong, nonatomic) NSMutableArray *records;
 
-
-
 @property (weak, nonatomic) IBOutlet UITableView *historyList;
 
 

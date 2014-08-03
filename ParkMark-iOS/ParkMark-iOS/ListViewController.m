@@ -8,6 +8,7 @@
 
 #import "ListViewController.h"
 #import "DirecationViewController.h"
+#import "CellTableViewCell.h"
 
 
 @interface ListViewController ()
@@ -20,6 +21,7 @@
 @implementation ListViewController
 
 @synthesize historyList;
+
 
 - (void)viewDidLoad
 {
@@ -37,7 +39,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSLog(@"Enter counter");
-    return _records.count;
+    return [_records count];
 }
 
 
@@ -45,20 +47,37 @@
 {
     static NSString *simpleTableIdentifier = @"ListCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    CellTableViewCell *cell = (CellTableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ListCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
-    cell.textLabel.text = [_records objectAtIndex:indexPath.row][@"note"];
     
-    PFFile *theImage = [_records objectAtIndex:indexPath.row][@"image"];
+    PFObject *cur = [_records objectAtIndex:indexPath.row];
+    cell.note.text = [cur objectForKey:@"note"];
+    
+    PFFile *theImage = [cur objectForKey:@"image"];
     NSData *imageData = [theImage getData];
-    cell.imageView.image = [UIImage imageWithData:imageData];
+    cell.image.image = [UIImage imageWithData:imageData];
+    
+    NSString *status = [cur objectForKey:@"status"];
+    if([status isEqualToString:@"marked"]) {
+        cell.status.text = @"Marked";
+    } else {
+        cell.status.text = @"Picked";
+    }
+    NSLog(status);
+   
+    NSDate *createdAt = cur.createdAt;
+    NSDateFormatter* df = [[NSDateFormatter alloc]init];
+    df.dateFormat = @"MM/dd/yyyy";
+    NSString* dateString = [df stringFromDate:createdAt];
+    cell.date.text = dateString;
+    NSLog(dateString);
     
     NSLog(@"Generate cell");
-    
     return cell;
 }
 
@@ -66,17 +85,18 @@
 {
     NSLog(@"Select a row");
     selectedRecord = [_records objectAtIndex:indexPath.row];
+    [self performSegueWithIdentifier:@"direcationSegue" sender:self];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if([segue.identifier isEqualToString:@"detailSegue"]) {
+    if([segue.identifier isEqualToString:@"direcationSegue"]) {
+        
         DirecationViewController *nextView = segue.destinationViewController;
-        nextView.selectedRecord = selectedRecord;
+        nextView.record = selectedRecord;
+        NSLog(@"Pass data");
     }
 }
-
-
 
 
 
