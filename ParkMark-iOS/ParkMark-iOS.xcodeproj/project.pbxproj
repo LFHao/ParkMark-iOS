@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		5E06C342198E8EA700883319 /* CellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E06C341198E8EA600883319 /* CellTableViewCell.m */; };
+		5E06C354198ECB8E00883319 /* iconPNG3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E06C351198ECB8E00883319 /* iconPNG3.png */; };
+		5E06C355198ECB8E00883319 /* iconPNG2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E06C352198ECB8E00883319 /* iconPNG2.png */; };
+		5E06C356198ECB8E00883319 /* iconPNG1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E06C353198ECB8E00883319 /* iconPNG1.png */; };
+		5E06C358198ECBEF00883319 /* org.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E06C357198ECBEF00883319 /* org.png */; };
+		5E06C35D198ECCD400883319 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E06C359198ECC6400883319 /* Images.xcassets */; };
 		5E2F9A6A198B13DC002BB16B /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F9A69198B13DC002BB16B /* ParkViewController.m */; };
 		5E2F9A6C198B1814002BB16B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2F9A6B198B1814002BB16B /* CoreLocation.framework */; };
 		5E2F9A6E198B1819002BB16B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E2F9A6D198B1819002BB16B /* MapKit.framework */; };
@@ -21,7 +26,6 @@
 		5E7BA628198424B300B1DC48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA627198424B300B1DC48 /* main.m */; };
 		5E7BA62F198424B300B1DC48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA62D198424B300B1DC48 /* Main.storyboard */; };
 		5E7BA632198424B300B1DC48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E7BA631198424B300B1DC48 /* ViewController.m */; };
-		5E7BA634198424B300B1DC48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E7BA633198424B300B1DC48 /* Images.xcassets */; };
 		5E7BA63B198424B300B1DC48 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA63A198424B300B1DC48 /* XCTest.framework */; };
 		5E7BA63C198424B300B1DC48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61B198424B300B1DC48 /* Foundation.framework */; };
 		5E7BA63D198424B300B1DC48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7BA61F198424B300B1DC48 /* UIKit.framework */; };
@@ -56,6 +60,11 @@
 /* Begin PBXFileReference section */
 		5E06C340198E8EA600883319 /* CellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTableViewCell.h; sourceTree = "<group>"; };
 		5E06C341198E8EA600883319 /* CellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTableViewCell.m; sourceTree = "<group>"; };
+		5E06C351198ECB8E00883319 /* iconPNG3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPNG3.png; sourceTree = "<group>"; };
+		5E06C352198ECB8E00883319 /* iconPNG2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPNG2.png; sourceTree = "<group>"; };
+		5E06C353198ECB8E00883319 /* iconPNG1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconPNG1.png; sourceTree = "<group>"; };
+		5E06C357198ECBEF00883319 /* org.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = org.png; sourceTree = "<group>"; };
+		5E06C359198ECC6400883319 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E2F9A68198B13DC002BB16B /* ParkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkViewController.h; sourceTree = "<group>"; };
 		5E2F9A69198B13DC002BB16B /* ParkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkViewController.m; sourceTree = "<group>"; };
 		5E2F9A6B198B1814002BB16B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -77,7 +86,6 @@
 		5E7BA62E198424B300B1DC48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E7BA630198424B300B1DC48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5E7BA631198424B300B1DC48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5E7BA633198424B300B1DC48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E7BA639198424B300B1DC48 /* ParkMark-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ParkMark-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E7BA63A198424B300B1DC48 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5E7BA642198424B300B1DC48 /* ParkMark-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ParkMark-iOSTests-Info.plist"; sourceTree = "<group>"; };
@@ -206,7 +214,7 @@
 				5E2F9A69198B13DC002BB16B /* ParkViewController.m */,
 				5E7BA630198424B300B1DC48 /* ViewController.h */,
 				5E7BA631198424B300B1DC48 /* ViewController.m */,
-				5E7BA633198424B300B1DC48 /* Images.xcassets */,
+				5E06C359198ECC6400883319 /* Images.xcassets */,
 				5E7BA622198424B300B1DC48 /* Supporting Files */,
 			);
 			path = "ParkMark-iOS";
@@ -215,6 +223,10 @@
 		5E7BA622198424B300B1DC48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5E06C357198ECBEF00883319 /* org.png */,
+				5E06C351198ECB8E00883319 /* iconPNG3.png */,
+				5E06C352198ECB8E00883319 /* iconPNG2.png */,
+				5E06C353198ECB8E00883319 /* iconPNG1.png */,
 				5E7BA623198424B300B1DC48 /* ParkMark-iOS-Info.plist */,
 				5E7BA624198424B300B1DC48 /* InfoPlist.strings */,
 				5E7BA627198424B300B1DC48 /* main.m */,
@@ -317,9 +329,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E7BA634198424B300B1DC48 /* Images.xcassets in Resources */,
+				5E06C35D198ECCD400883319 /* Images.xcassets in Resources */,
+				5E06C356198ECB8E00883319 /* iconPNG1.png in Resources */,
 				5E7BA626198424B300B1DC48 /* InfoPlist.strings in Resources */,
+				5E06C354198ECB8E00883319 /* iconPNG3.png in Resources */,
+				5E06C358198ECBEF00883319 /* org.png in Resources */,
 				5E7BA62F198424B300B1DC48 /* Main.storyboard in Resources */,
+				5E06C355198ECB8E00883319 /* iconPNG2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
