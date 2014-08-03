@@ -2,7 +2,7 @@
 //  MapViewController.h
 //  ParkMark-iOS
 //
-//  Created by Leif on 8/1/14.
+//  Created by Longfei Hao  on 8/1/14.
 //  Copyright (c) 2014 Leif. All rights reserved.
 //
 
