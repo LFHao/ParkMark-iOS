@@ -12,7 +12,9 @@
 
 @end
 
+
 @implementation SocialViewController
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,22 +42,14 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-//- (IBAction)facebook:(id)sender {
-//    
-//    
-//    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
-//        SLComposeViewController *fbSheetOBJ = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
-//        
-//        [fbSheetOBJ setInitialText:@"First post from my iOS application in weblineindia"];
-//        [self presentViewController:fbSheetOBJ animated:YES completion:Nil];
-//    }
-//}
-
 - (IBAction)facebook:(id)sender {
-    [FBSession openActiveSessionWithReadPermissions:nil allowLoginUI:YES completionHandler:^(FBSession *session, FBSessionState status, NSError *error){
-        //code user has loged in
-    }];
-  }
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *fbSheetOBJ = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        [fbSheetOBJ setInitialText:@"First post from my iOS application in weblineindia"];
+        [self presentViewController:fbSheetOBJ animated:YES completion:Nil];
+    }
+}
 
 
 /*
