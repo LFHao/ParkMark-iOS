@@ -8,6 +8,7 @@
 
 #import "SocialViewController.h"
 
+
 @interface SocialViewController ()
 
 @end
@@ -38,6 +39,15 @@
 
 - (IBAction)done:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)checkIn:(id)sender {
+    if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+        SLComposeViewController *fbSheetOBJ = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
+        
+        [fbSheetOBJ setInitialText:@"Hey guys, I just arrived and parked my car! See you soon!"];
+        [self presentViewController:fbSheetOBJ animated:YES completion:Nil];
+    }
 }
 
 
