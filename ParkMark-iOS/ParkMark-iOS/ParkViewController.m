@@ -14,6 +14,7 @@
     PFFile *imageFile;
     NSString *noteContent;
     PFGeoPoint *point;
+    Boolean flag;
 }
 
 @end
@@ -37,7 +38,7 @@
     _locationManager = [[CLLocationManager alloc] init];
     _locationManager.delegate = self;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    
+    flag = FALSE;
 
 }
 
@@ -173,7 +174,16 @@
 /******************************************Add alarm*******************************************************/
 - (IBAction)addAlarm:(id)sender
 {
-    [self performSegueWithIdentifier:@"alarmSegue" sender:self];
+    if(!flag) {
+        [sender setTitle:@"Delete Reminder" forState:UIControlStateNormal];
+        flag = TRUE;
+        [self performSegueWithIdentifier:@"alarmSegue" sender:self];
+    } else {
+        [sender setTitle:@"Add Reminder" forState:UIControlStateNormal];
+        flag = FALSE;
+    }
+
+    
 }
 /******************************************End of add alarm*******************************************************/
 
@@ -207,7 +217,7 @@
         NSLog(@"Location is null");
     }
     if(point != nil || noteContent != NULL || imageFile != nil) {
-        record[@"status"] = @"n";
+        record[@"status"] = @"marked";
         [record saveInBackground];
     } else {
         NSLog(@"No objects in record");

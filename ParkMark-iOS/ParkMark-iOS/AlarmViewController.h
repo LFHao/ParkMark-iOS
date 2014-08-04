@@ -12,7 +12,7 @@
 
 - (IBAction)add:(id)sender;
 
-- (IBAction)cancel:(id)sender;
+//- (IBAction)cancel:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *datapicker;
 
