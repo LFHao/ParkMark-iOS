@@ -19,7 +19,7 @@
             </objects>
             <point key="canvasLocation" x="-1090" y="-22"/>
         </scene>
-        <!--View Controller - Park Mark-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -88,7 +88,7 @@
                             <bool key="isElement" value="NO"/>
                         </accessibility>
                     </view>
-                    <navigationItem key="navigationItem" title="Park Mark" id="cCB-uZ-I5o"/>
+                    <navigationItem key="navigationItem" id="cCB-uZ-I5o"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,7 +170,7 @@
                         <viewControllerLayoutGuide type="top" id="DBE-5E-Ajw"/>
                         <viewControllerLayoutGuide type="bottom" id="lXo-20-ND5"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lT1-XM-Veb" customClass="so">
+                    <view key="view" contentMode="scaleToFill" id="lT1-XM-Veb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
