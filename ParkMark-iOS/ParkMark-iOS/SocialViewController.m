@@ -7,6 +7,7 @@
 //
 
 #import "SocialViewController.h"
+#import "ViewController.h"
 
 
 @interface SocialViewController ()
@@ -38,8 +39,22 @@
 
 
 - (IBAction)done:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
+    //[self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    
 }
+
+//- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if([segue.identifier isEqualToString:@"rootSegue"]) {
+//        ViewController *nextView = segue.destinationViewController;
+//        //[nextView viewDidLoad];
+//    }
+//    NSLog(@"enter rootSegue");
+//}
+
+
+
 
 - (IBAction)checkIn:(id)sender {
     if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {

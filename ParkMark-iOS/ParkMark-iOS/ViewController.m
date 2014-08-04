@@ -22,13 +22,19 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+
+
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     //Retrive data from parse
     records = [[NSMutableArray alloc]init];
     PFQuery *query = [PFQuery queryWithClassName:@"ParkHistory"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
-            NSLog(@"Successfully retrieved %d records.", objects.count);
+            NSLog(@"Successfully retrieved %lu records.", (unsigned long)objects.count);
             // Do something with the found objects
             for (PFObject *object in objects) {
                 [records addObject:object];
@@ -40,6 +46,8 @@
         }
     }];
 }
+
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -55,6 +63,7 @@
         ListViewController *nextView = segue.destinationViewController;
         nextView.records = records;
     }
+    NSLog(@"enter segue");
 }
 
 

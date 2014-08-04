@@ -68,7 +68,6 @@
     } else {
         cell.status.text = @"Picked";
     }
-    NSLog(status);
    
     NSDate *createdAt = cur.createdAt;
     NSDateFormatter* df = [[NSDateFormatter alloc]init];
@@ -76,8 +75,6 @@
     NSString* dateString = [df stringFromDate:createdAt];
     cell.date.text = dateString;
     NSLog(dateString);
-    
-    NSLog(@"Generate cell");
     return cell;
 }
 
