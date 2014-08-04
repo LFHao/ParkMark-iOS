@@ -11,9 +11,7 @@
 
 @interface SocialViewController : UIViewController
 
-
 - (IBAction)done:(id)sender;
-- (IBAction)facebook:(id)sender;
 
 - (IBAction)checkIn:(id)sender;
 

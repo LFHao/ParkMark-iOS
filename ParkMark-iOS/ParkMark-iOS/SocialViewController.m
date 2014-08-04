@@ -7,14 +7,13 @@
 //
 
 #import "SocialViewController.h"
-#import <Social/Social.h>
+
+
 @interface SocialViewController ()
 
 @end
 
-
 @implementation SocialViewController
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -42,11 +41,11 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)facebook:(id)sender {
+- (IBAction)checkIn:(id)sender {
     if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
         SLComposeViewController *fbSheetOBJ = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         
-        [fbSheetOBJ setInitialText:@"First post from my iOS application in weblineindia"];
+        [fbSheetOBJ setInitialText:@"Hey guys, I just arrived and parked my car! See you soon!"];
         [self presentViewController:fbSheetOBJ animated:YES completion:Nil];
     }
 }
